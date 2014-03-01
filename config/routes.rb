@@ -4,7 +4,7 @@ Bookstore1::Application.routes.draw do
   get "page/contact"
   get "page/book"
   get "page/order"
-  #resources :pages
+  resources :page
   post "page/contact"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
