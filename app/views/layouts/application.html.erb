@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookstore</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <style>
+   body
+   {
+    background-image:url("http://static3.wikia.nocookie.net/__cb20120728131606/assassinscreed/images/8/8b/Old_paper.jpg");
+    background-repeat:no-repeat;
+    font-style:italic;
+    }
+    h1, h3{
+      color: purple;
+    }
+    p{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

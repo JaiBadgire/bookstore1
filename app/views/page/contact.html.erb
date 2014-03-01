@@ -1,0 +1,31 @@
+
+
+<a href="/page/home">Home</a>
+<a href="/page/about">About</a>
+<a href="/page/book">Books</a>
+<a href="/page/contact">Contact</a>
+<a href="/page/order">Order</a>
+
+
+
+<%= form_for :page do |f| %>
+  <p>
+    <%= f.label :Name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+ 
+  <p>
+    <%= f.label :Message %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
